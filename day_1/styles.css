@@ -1,0 +1,52 @@
+body,h3 {
+  margin: 0;
+}
+header,
+footer {
+  background-color: #DAA507;
+}
+
+header {
+  font-size: 52px;
+  text-align: center;
+  height: 63px;
+}
+img{
+    display: block;
+    width: 500px;
+    height: auto;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    text-align: center;
+}
+.description-container,.ingredients-container,.steps-container{
+    margin: 12px;
+    padding: 8px;
+}
+
+.description-container{
+    background-color: #8EC7D2;
+    
+}
+
+.ingredients-container{
+    background-color: #0D6A87;
+}
+
+.steps-container{
+    background-color: #07475A;
+    color: white;
+}
+
+
+footer {
+    height: 44px;
+}
+footer p {
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+}
