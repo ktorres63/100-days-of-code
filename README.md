@@ -11,9 +11,9 @@
 - **Day 09**: Solve some javascript exercises
 - **Day 10**: Read about conditionals and regex with javascript
 - **Day 11**: Solve some javascript exercises
-- **Day 12**: Finish qr-component project proposed by Frontend Mentos
+- **Day 12**: Finish qr-component project proposed by Frontend Mentor
 - **Day 13**: Debugging javascript code with devtools
-- **Day 14**: Progress in blocg-card project
+- **Day 14**: Progress in blog-card project
 - **Day 15**: Finish blog-card project proposed by Frontend Mentor
 
 
