@@ -20,13 +20,17 @@
     const sect = document.querySelector("section");
     const para = document.createElement("p");
     para.textContent = "We hope you enjoyed the ride.";
-        
+
     const text = document.createTextNode(" — the premier source for web development knowledge.",);
 
     const linkPara = document.querySelector("p");
     linkPara.appendChild(text);
-    
-    sect.appendChild(para)
+
+    sect.appendChild(para);
+    linkPara.remove()
+
+    sect.appendChild(linkPara);
+// sect.removeChild(linkPara);
   </script>
 </body>
 
