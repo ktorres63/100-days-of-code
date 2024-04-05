@@ -1,6 +1,9 @@
 const ulElem = document.querySelector("ul");
 const input = document.querySelector("input");
 const btn = document.querySelector("button");
+// we can use the id in querySelector function
+// let btn = document.querySelector('#btn');
+
 btn.addEventListener("click", () => {
   let inputText = input.value;
   input.value = "";
