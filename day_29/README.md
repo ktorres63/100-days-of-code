@@ -43,3 +43,15 @@ Using focus and blur events
   }
 </script>
 ```
+Code to react wwhen the user has typed something
+```html
+<textarea>Type something here...</textarea>
+<script>
+  let textarea = document.querySelector("textarea");
+  let timeout;
+  textarea.addEventListener("input", () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => console.log("Typed!"), 500);
+  });
+</script>
+```
