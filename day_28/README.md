@@ -88,3 +88,42 @@ Using a single handler to various buttons
 </script>
 ```
 
+using preventDefault to cancel the deafaul behaviour of an element
+
+``` 
+<a href="https://developer.mozilla.org/">MDN</a>
+<script>
+  let link = document.querySelector("a");
+  link.addEventListener("click", event => {
+    console.log("Nope.");
+    event.preventDefault();
+  });
+</script>
+```
+
+primitive draw app
+
+```
+<style>
+  body {
+    height: 200px;
+    background: beige;
+  }
+  .dot {
+    height: 8px; width: 8px;
+    border-radius: 4px; /* rounds corners */
+    background: teal;
+    position: absolute;
+  }
+</style>
+<script>
+  window.addEventListener("click", event => {
+    let dot = document.createElement("div");
+    dot.className = "dot";
+    dot.style.left = (event.pageX - 4) + "px";
+    dot.style.top = (event.pageY - 4) + "px";
+    document.body.appendChild(dot);
+  });
+</script>
+```
+
