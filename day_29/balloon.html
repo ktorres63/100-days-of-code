@@ -26,19 +26,21 @@
 
     function inflate(event){
       if (event.key === "ArrowDown") {
-        size = size * 0.1 - size;
+        size = size - size * 0.1  ;
         balloon.style.fontSize = `${size}px`;
         console.log("DOWN!");
+        console.log(size);
       }
       else if (event.key === "ArrowUp") {
-        size = size * 0.1 + size;
+        size = size + size * 0.1 ;
         balloon.style.fontSize = `${size}px`;
         console.log("UP!");
+        console.log(size);
       }
       if (size > 100) {
         const boom = document.createElement('p');
         boom.textContent = "💥" 
-        boom.style.fontSize = `${size}px`;
+        boom.style.fontSize = `100px`;
 
         document.body.replaceChild(boom,balloon);
         console.log("BOOM")
