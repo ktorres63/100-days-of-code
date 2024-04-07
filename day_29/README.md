@@ -43,7 +43,7 @@ Using focus and blur events
   }
 </script>
 ```
-Code to react wwhen the user has typed something
+Code to react when the user has typed something
 ```html
 <textarea>Type something here...</textarea>
 <script>
@@ -52,6 +52,23 @@ Code to react wwhen the user has typed something
   textarea.addEventListener("input", () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => console.log("Typed!"), 500);
+  });
+</script>
+```
+code to detect mouse's position
+
+```html
+<script>
+  let scheduled = null;
+  window.addEventListener("mousemove", event => {
+    if (!scheduled) {
+      setTimeout(() => {
+        document.body.textContent =
+          `Mouse at ${scheduled.pageX}, ${scheduled.pageY}`;
+        scheduled = null;
+      }, 250);
+    }
+    scheduled = event;
   });
 </script>
 ```
