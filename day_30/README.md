@@ -121,3 +121,12 @@ container.addEventListener("click", (event) => {
 });
 ```
 **Note**: In this example, we're using event.target to get the element that was the target of the event (that is, the innermost element). If we wanted to access the element that handled this event (in this case the container) we could use event.currentTarget.
+
+```js
+button.addEventListener('click', () => {
+  console.log('Click!!!');
+}, {
+once: true
+});
+```
+we use `once:true` to ensure that the event is executed only once
