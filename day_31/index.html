@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-paper-scissors</title>
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+ 
+
+
+  <h1 class="title">Rock-Paper-Scissors</h1>
+  <section class="options">
+
+    <a class="link" href="#">
+      <h2 id="rock" class="emoji">🪨</h2>
+    </a>
+    <a class="link" href="#">
+      <h2 id="paper" class="emoji">📄</h2>
+    </a>
+    <a class="link" href="#">
+      <h2  id="scissors" class="emoji">✂️</h2>
+    </a>
+  </section>
+
+  <section class="score">
+    <h2>SCORE</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="left">You</th>
+          <th>Computer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left" id="userSel">-</td>
+          <td id="computerSel">-</td>
+        </tr>
+        <tr>
+          <td class="left" id="userScore">0</td>
+          <td id="computerScore">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 id="result"></h2>
+  </section>
+  <!-- <button onclick="location.reload()">Reset</button> -->
+  <button>Reset</button>
+
+
+
+</body>
+
+</html>
