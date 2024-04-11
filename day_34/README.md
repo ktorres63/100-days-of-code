@@ -60,3 +60,15 @@ console.log(arr); // Outputs [1, 2, 3, 4, 5], original array is not affected
 ```
 ## Reduce
 Finally, let’s say that we wanted to multiply all of the numbers in our arr together like this: 1 * 2 * 3 * 4 * 5
+* The callback function takes two arguments instead of one. The first argument is the accumulator, which is the current value of the result at that point in the loop. The first time through, this value will either be set to the initialValue (described in the next bullet point), or the first element in the array if no initialValue is provided. The second argument for the callback is the current value, which is the item currently being iterated on.
+* It also takes in an initialValue as a second argument (after the callback), which helps when we don’t want our initial value to be the first element in the array. For instance, if we wanted to sum all numbers in an array, we could call reduce without an initialValue, but if we wanted to sum all numbers in an array and add 10, we could use 10 as our initialValue.
+```js
+const arr = [1, 2, 3, 4, 5];
+const productOfAllNums = arr.reduce((total, currentItem) => {
+  return total * currentItem;
+}, 1);
+console.log(productOfAllNums); // Outputs 120;
+console.log(arr); // Outputs [1, 2, 3, 4, 5]
+```
+
+
