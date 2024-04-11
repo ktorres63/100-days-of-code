@@ -51,3 +51,12 @@ const arr = [1, 2, 3, 4, 5];
 const mappedArr = arr.map((num) => num + 1);
 console.log(mappedArr); // Outputs [2, 3, 4, 5, 6]
 ```
+## Filter
+filter is somewhat similar to map. It still iterates through the array and applies the callback function on every item. However, instead of transforming the values in the array, it returns the original values of the array, but only IF the callback function returns true. Let’s say we had a function. The filter method expects the callback to return either true or false. If it returns true, the value is included in the output. Otherwise, it isn’t.
+```js
+const oddNums = arr.filter((num) => num % 2 !== 0);
+console.log(oddNums); // Outputs [1, 3, 5];
+console.log(arr); // Outputs [1, 2, 3, 4, 5], original array is not affected
+```
+## Reduce
+Finally, let’s say that we wanted to multiply all of the numbers in our arr together like this: 1 * 2 * 3 * 4 * 5
