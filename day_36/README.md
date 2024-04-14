@@ -20,7 +20,17 @@ arr.splice(-1, 0, 3, 4);
 
 alert( arr ); // 1,2,3,4,5
 ```
+## Slice
+The method arr.slice is much simpler than similar-looking arr.splice.
+
+the syntax is 
+`arr.slice([start],[end]);`
 
 
+```js
+let arr = ["t", "e", "s", "t"];
 
+alert( arr.slice(1, 3) ); // e,s (copy from 1 to 3)
 
+alert( arr.slice(-2) ); // s,t (copy from -2 till the end)
+```
