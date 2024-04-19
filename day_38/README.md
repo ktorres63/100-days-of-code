@@ -1,4 +1,5 @@
 # Array methods
+## find, findIndex, findLastIndex
 Imagine we have an array of objects. How do we find an object with the specific condition?
 
 Here the arr.find(fn) method comes in handy.
@@ -27,7 +28,7 @@ The arr.findLastIndex method is like findIndex, but searches from right to left,
 
 Here’s an example:
 
-````js
+```js
 let users = [
   {id: 1, name: "John"},
   {id: 2, name: "Pete"},
@@ -41,4 +42,12 @@ alert(users.findIndex(user => user.name == 'John')); // 0
 // Find the index of the last John
 alert(users.findLastIndex(user => user.name == 'John')); // 3
 ```
+## find 
+The syntax is similar to find, but filter returns an array of all matching elements:
 
+```js
+let results = arr.filter(function(item, index, array) {
+  // if true item is pushed to results and the iteration continues
+  // returns empty array if nothing found
+});
+```
