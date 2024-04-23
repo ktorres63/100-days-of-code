@@ -19,3 +19,7 @@ Multiple runs of shuffle may lead to different orders of elements
 Write the function getAverageAge(users) that gets an array of objects with property age and returns the average age.
 
 The formula for the average is (age1 + age2 + ... + ageN) / N.
+## Filter unique array members
+Let arr be an array.
+
+Create a function unique(arr) that should return an array with unique items of arr.
