@@ -23,6 +23,12 @@ function camelize(str) {
   return newArr.join("");
 }
 
+
+console.log(camelize("background-color")) // 'backgroundColor'
+console.log(camelize("list-style-image")) // 'listStyleImage';
+console.log(camelize("-webkit-transition")) // 'WebkitTransition';
+
+
 //SOLUTION
 /*
 function camelize(str) {
@@ -34,8 +40,4 @@ function camelize(str) {
       (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
     )
     .join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
-}
-*/
-console.log(camelize("background-color")) // 'backgroundColor'
-console.log(camelize("list-style-image")) // 'listStyleImage';
-console.log(camelize("-webkit-transition")) // 'WebkitTransition';
+}*/
